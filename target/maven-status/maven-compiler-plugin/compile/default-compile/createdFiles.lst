@@ -1,10 +1,2 @@
-com\softtek\pruebatec1\services\ServiciosEmpleado.class
 com\softtek\pruebatec1\ControladorMenu.class
-com\softtek\pruebatec1\persistence\exceptions\IllegalOrphanException.class
-com\softtek\pruebatec1\persistence\EmpleadoJpaController.class
-com\softtek\pruebatec1\persistence\exceptions\PreexistingEntityException.class
-com\softtek\pruebatec1\services\ControladoraPersistencia.class
-com\softtek\pruebatec1\persistence\exceptions\NonexistentEntityException.class
-com\softtek\pruebatec1\models\Empleado_.class
 com\softtek\pruebatec1\PruebaTec1.class
-com\softtek\pruebatec1\models\Empleado.class

@@ -1,11 +1,8 @@
 package com.softtek.pruebatec1;
 
-import com.softtek.pruebatec1.servicios.ModificarEmpleado;
-import com.softtek.pruebatec1.servicios.BorrarEmpleado;
-import com.softtek.pruebatec1.servicios.BuscarEmpleadosPorCargo;
 import com.softtek.pruebatec1.servicios.ControladoraPersistencia;
-import com.softtek.pruebatec1.servicios.CrearEmpleado;
-import com.softtek.pruebatec1.servicios.MostrarEmpleados;
+import com.softtek.pruebatec1.servicios.ServiciosEmpleado;
+import static com.softtek.pruebatec1.servicios.ServiciosEmpleado.limpiarConsola;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -26,16 +23,30 @@ public class ControladorMenu {
                 scanner.nextLine();
 
                 switch (opcion) {
-                    case 1 ->
-                        MostrarEmpleados.mostrarEmpleados(controlPersis);
-                    case 2 ->
-                        CrearEmpleado.crearEmpleado(controlPersis);
-                    case 3 ->
-                        BorrarEmpleado.borrarEmpleado(controlPersis);
-                    case 4 ->
-                        ModificarEmpleado.actualizarEmpleado(controlPersis);
-                    case 5 ->
-                        BuscarEmpleadosPorCargo.buscarEmpleadosPorCargo(controlPersis);
+                    case 1 -> {
+                        limpiarConsola();
+                        ServiciosEmpleado.mostrarEmpleados(controlPersis);
+                        System.out.print("Presiona cualquier tecla para avanzar...");
+                        Scanner scanner = new Scanner(System.in);
+                        scanner.nextLine();
+                        limpiarConsola();
+                    }
+                    case 2 -> {
+                        limpiarConsola();
+                        ServiciosEmpleado.crearEmpleado(controlPersis);
+                    }
+                    case 3 -> {
+                        limpiarConsola();
+                        ServiciosEmpleado.borrarEmpleado(controlPersis);
+                    }
+                    case 4 -> {
+                        limpiarConsola();
+                        ServiciosEmpleado.actualizarEmpleado(controlPersis);
+                    }
+                    case 5 -> {
+                        limpiarConsola();
+                        ServiciosEmpleado.buscarEmpleadosPorCargo(controlPersis);
+                    }
                     case 0 -> {
                         System.out.println("Saliendo de la terminal, ¡nos vemos pronto!");
                         continuar = false;

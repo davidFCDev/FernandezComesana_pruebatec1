@@ -17,6 +17,7 @@ public class Empleado implements Serializable {
     private String nombre;
     private String primerApellido;
     private String segundoApellido;
+    private int dni;
     private String cargo;
     private double salario;
     private LocalDate fechaInicio;
@@ -24,10 +25,11 @@ public class Empleado implements Serializable {
     public Empleado() {
     }
 
-    public Empleado(String nombre, String primerApellido, String segundoApellido, String cargo, double salario, LocalDate fechaInicio) {
+    public Empleado(String nombre, String primerApellido, String segundoApellido, int dni, String cargo, double salario, LocalDate fechaInicio) {
         this.nombre = nombre;
         this.primerApellido = primerApellido;
         this.segundoApellido = segundoApellido;
+        this.dni = dni;
         this.cargo = cargo;
         this.salario = salario;
         this.fechaInicio = fechaInicio;
@@ -47,6 +49,10 @@ public class Empleado implements Serializable {
 
     public String getSegundoApellido() {
         return segundoApellido;
+    }
+
+    public int getDni() {
+        return dni;
     }
 
     public String getCargo() {
@@ -77,6 +83,10 @@ public class Empleado implements Serializable {
         this.segundoApellido = segundoApellido;
     }
 
+    public void setDni(int dni) {
+        this.dni = dni;
+    }
+    
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
@@ -91,7 +101,7 @@ public class Empleado implements Serializable {
 
     @Override
     public String toString() {
-        return "> Empleado < " + "Id = " + id  + " | Nombre = "+ nombre + " " + primerApellido + " "  + segundoApellido + " | Cargo = " + cargo + " | Salario = " + salario + " |  Inicio = " + fechaInicio + " | ";
+        return "> Empleado < " + "Id = " + id  + " | Nombre = "+ nombre + " " + primerApellido + " "  + segundoApellido + " | Dni = " + dni + " | Cargo = " + cargo + " | Salario = " + salario + " |  Inicio = " + fechaInicio + " | ";
     }
     
     
