@@ -44,3 +44,4 @@ Primera prueba técnica del Bootcamp de Java con la implementación de un CRUD c
 
 ## Supuestos
 - Se supone que la fecha de inicio corresponde con la fecha de la creación del empleado, por lo tanto la fecha se crea automáticamente.
+- Se supone que el DNI debe ser único e irrepetible. Si se introduce un DNI ya existente en la base de datos, ocurrirá un error.
