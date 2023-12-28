@@ -30,11 +30,11 @@ Primera prueba técnica del Bootcamp de Java con la implementación de un CRUD c
 
 ## Estructura
 
-- src/com.softtek.pruebatec1 - Archivo de arranque y controlador del terminal.
-- src/com.softtek.pruebatec1.modelos - Clase Empleado.
-- src/com.softtek.pruebatec1.persistencia - Controlador JPA de persistencia.
-- src/com.softtek.pruebatec1.persistencia.excepciones - Excepciones persistencia.
-- src/com.softtek.pruebatec1.servicios - Controladora de persistencia y métodos CRUD
+- **src/com.softtek.pruebatec1** - Archivo de arranque y controlador del terminal.
+- **src/com.softtek.pruebatec1.modelos** - Clase Empleado.
+- **src/com.softtek.pruebatec1.persistencia** - Controlador JPA de persistencia.
+- **src/com.softtek.pruebatec1.persistencia.excepciones** - Excepciones persistencia.
+- **src/com.softtek.pruebatec1.servicios** - Controladora de persistencia y métodos CRUD
 
 ## Uso
 
